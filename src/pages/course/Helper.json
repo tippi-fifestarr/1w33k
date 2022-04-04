@@ -1,0 +1,66 @@
+[
+  {
+    "chapter": 1,
+    "title": "Who is Iron Man?",
+    "img": "https://mir-s3-cdn-cf.behance.net/projects/404/bbad37131427001.Y3JvcCwxNDYxLDExNDIsMCw0NTI.png",
+    "comment": "Iron Man is a superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963), and received his own title in Iron Man #1 (May 1968). Also in 1963, the character founded the Avengers alongside Thor, Ant-Man, Wasp and the Hulk.",
+    "content": "Tony Stark is the wealthy son of industrialist and weapons manufacturer Howard Stark and his wife, Maria. Tony grew up a genius with a brilliant mind for technology and inventions and, naturally, followed in his father’s footsteps, inheriting Stark Industries upon his parents’ untimely death. Tony designed many weapons of war for Stark Industries, far beyond what any other company was creating, while living the lifestyle of a bon vivant. Fate would take a dark turn for Tony Stark once he decided to consult on a weapons contract overseas in enemy terrain. An improvised explosive device exploded underneath Tony’s transport, and he was brought to the brink of death. Awakening as a prisoner of the warlord Wong-Chu, Tony made a gruesome discovery: the explosion had sent a piece of shrapnel mere inches from his heart. It was only the timely intervention of fellow captive and engineer Yinsen that kept the shrapnel at bay.While held captive, and forced to work on weapons, Tony turned his near-death experience into inspiration. What if he could power an iron suit that would not only keep the shrapnel from killing Tony, but also help him to escape? Combining their genius, Tony and Yinsen built a mighty suit of iron armor that would be dubbed Iron Man. This first suit left a lot of room for improvement, but it still did what Tony couldn’t do alone. Yinsen sacrificed his life so the final preparations could be made, and Tony, wearing the Iron Man suit for the first time, escaped and returned to the United States a changed man.With full access to his equipment, Tony built a new, more streamlined suit of armor—the first of many updated versions he would create—and dedicated his life to fighting threats to the world.",
+    "questions": {
+      "title": "What is the real name of Iron Man?",
+      "options": [
+        { "value": false, "label": "Bruce Banner" },
+        { "value": true, "label": "Tony Stark" },
+        { "value": false, "label": "Stephen Strange" },
+        { "value": false, "label": "Steve Rogers" }
+      ]
+    }
+  },
+  {
+    "chapter": 2,
+    "title": "What is Star Wars?",
+    "img": "https://cdn.worldvectorlogo.com/logos/star-wars-2.svg",
+    "comment": "Star Wars is an American epic space-opera multimedia franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon. The franchise has been expanded into various films and other media, including television series, video games, novels, comic books, theme park attractions, and themed areas, comprising an all-encompassing fictional universe. In 2020, its total value was estimated at US$70 billion, and it is currently the fifth-highest-grossing media franchise of all time.",
+    "content": "The Star Wars franchise depicts the adventures of characters 'A long time ago in a galaxy far, far away',5 in which humans and many species of aliens (often humanoid) co-exist with robots (typically referred to in the films as 'droids'), who may assist them in their daily routines; space travel between planets is common due to lightspeed hyperspace technology. Spacecraft range from small starfighters, to huge capital ships such as the Star Destroyers, to space stations such as the moon-sized Death Stars. Telecommunication includes two-way audio and audiovisual screens, and holographic projections. A mystical power known as the Force is described in the original film as 'an energy field created by all living things ... binds the galaxy together'. Through training and meditation, those whom 'the Force is strong with' are able to perform various superpowers (such as telekinesis, precognition, telepathy, and manipulation of physical energy). The Force is wielded by two major knightly orders at conflict with each other: the Jedi, peacekeepers of the Galactic Republic who act on the light side of the Force through non-attachment and arbitration, and the Sith, who use the dark side by manipulating fear and aggression. While Jedi Knights can be numerous, the Dark Lords of the Sith (or 'Darths') are intended to be limited to two: a master and their apprentice. Force-wielders are very limited in numbers in comparison to the population. The Jedi and Sith prefer the use of a weapon called a lightsaber, a blade of energy that can cut through virtually any surface and deflect energy bolts. The rest of the population, as well as renegades and soldiers, use laser-powered blaster firearms. In the outer reaches of the galaxy, crime syndicates such as the Hutt cartel are dominant. Bounty hunters are often employed by both gangsters and governments. Illicit activities include smuggling and slavery.",
+    "questions": {
+      "title": "Where and when does Star Wars take place?",
+      "options": [
+        { "value": false, "label": "Recently in a nearby galaxy" },
+        { "value": false, "label": "A long time ago in a nearby galaxy" },
+        { "value": false, "label": "Recently in a galaxy far, far away" },
+        { "value": true, "label": "A long time ago in a galaxy far, far away" }
+      ]
+    }
+  },
+  {
+    "chapter": 3,
+    "title": "Who is Batman?",
+    "img": "https://scontent.fuio1-1.fna.fbcdn.net/v/t1.18169-9/148421_180198548778516_1747481706_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG-NNvXTMUtx2Fxc31qwwQ1dL_53YGJvQd0v_ndgYm9B3WpawXArx-etw_vWQ-jxTo&_nc_ohc=0dLywvxu67AAX_Xn6Ad&_nc_ht=scontent.fuio1-1.fna&oh=00_AT9AS1icDKhQmFih5mU_32v90IpwacAw3Ny2MbMeD6dYoQ&oe=62721728",
+    "comment": "Batman is is a superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe continuity, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and industrialist who resides in Gotham City. Batman's origin story features him swearing vengeance against criminals after witnessing the murder of his parents Thomas and Martha, a vendetta tempered with the ideal of justice.",
+    "content": "Kane conceived Batman in early 1939 to capitalize on the popularity of DC's Superman; although Kane frequently claimed sole creation credit, Finger substantially developed the concept from a generic superhero into something more bat-like. The character received his own spin-off publication, Batman, in 1940. Batman was originally introduced as a ruthless vigilante who frequently killed or maimed criminals, but evolved into a character with a stringent moral code and strong sense of justice. Unlike most superheroes, Batman does not possess any superpowers, instead relying on his intellect, fighting skills, and wealth. The 1960s Batman television series used a camp aesthetic, which continued to be associated with the character for years after the show ended. Various creators worked to return the character to his darker roots in the 1970s and 1980s, culminating with the 1986 miniseries The Dark Knight Returns by Frank Miller. DC has featured Batman in many comic books, including comics published under its imprints such as Vertigo and Black Label. The longest-running Batman comic, Detective Comics, is the longest-running comic book in the United States. Batman is frequently depicted alongside other DC superheroes, such as Superman and Wonder Woman, as a member of organizations such as the Justice League and the Outsiders. In addition to Bruce Wayne, other characters have taken on the Batman persona on different occasions, such as Jean-Paul Valley / Azrael in the 1993–1994 'Knightfall' story arc; Dick Grayson, the first Robin, from 2009 to 2011; and Jace Fox, son of Wayne's ally Lucius, as of 2021. DC has also published comics featuring alternate versions of Batman, including the incarnation seen in The Dark Knight Returns and its successors, the incarnation from the Flashpoint (2011) event, and numerous interpretations from Elseworlds stories. One of the most iconic characters in popular culture, Batman has been listed among the greatest comic book superheroes and fictional characters ever created. He is one of the most commercially successful superheroes, and his likeness has been licensed and featured in various media and merchandise sold around the world; this includes toy lines such as Lego Batman and video games like the Batman: Arkham series. Batman has been adapted in live-action and animated incarnations, including the 1960s Batman television series played by Adam West and in film by Michael Keaton in Batman (1989), Batman Returns (1992), The Flash (2023) and Batgirl (2022), Christian Bale in The Dark Knight trilogy (2005–2012), Ben Affleck in the DC Extended Universe (2016–present), and Robert Pattinson in The Batman (2022). Kevin Conroy, Jason O'Mara, Will Arnett, and Keanu Reeves, among others, have provided the character's voice.",
+    "questions": {
+      "title": "Who was the first actor to play Batman?",
+      "options": [
+        { "value": true, "label": "Adam West" },
+        { "value": false, "label": "Robert Pattinson" },
+        { "value": false, "label": "Christian Bale" },
+        { "value": false, "label": "Ben Affleck" }
+      ]
+    }
+  },
+  {
+    "chapter": 4,
+    "title": "Who is Superman?",
+    "img": "https://i.pinimg.com/originals/63/19/95/6319956af391981a1c1237ec98097b18.jpg",
+    "comment": "Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938). Superman has been adapted to a number of other media which includes radio serials, novels, movies, television shows and theatre. Superman was born on the fictional planet Krypton and was named Kal-El. As a baby, his parents sent him to Earth in a small spaceship moments before Krypton was destroyed in a natural cataclysm. His ship landed in the American countryside, near the fictional town of Smallville. He was found and adopted by farmers Jonathan and Martha Kent, who named him Clark Kent.",
+    "content": "Clark developed various superhuman abilities, such as incredible strength and impervious skin. His adoptive parents advised him to use his abilities for the benefit of humanity, and he decided to fight crime. To protect his personal life, he changes into a colorful costume and uses the alias 'Superman' when fighting crime. Clark resides in the fictional American city of Metropolis, where he works as a journalist for the Daily Planet. Superman's supporting characters include his love interest and fellow journalist Lois Lane, Daily Planet photographer Jimmy Olsen and editor-in-chief Perry White, and his enemies include General Zod, Brainiac, and his archenemy Lex Luthor. Superman is the classic example of the superhero archetype: he wears an outlandish costume, uses a codename, and fights evil with the aid of extraordinary abilities. Although there are earlier characters who arguably fit this definition, it was Superman who popularized the superhero genre and established its conventions. He was the best-selling superhero in American comic books up until the 1980s. Jerry Siegel and Joe Shuster met in 1932 while attending Glenville High School in Cleveland and bonded over their admiration of fiction. Siegel aspired to become a writer and Shuster aspired to become an illustrator. Siegel wrote amateur science fiction stories, which he self-published as a magazine called Science Fiction: The Advance Guard of Future Civilization. His friend Shuster often provided illustrations for his work. In January 1933, Siegel published a short story in his magazine titled 'The Reign of the Superman'. The titular character is a homeless man named Bill Dunn who is tricked by an evil scientist into consuming an experimental drug. The drug gives Dunn the powers of mind-reading, mind-control, and clairvoyance. He uses these powers maliciously for profit and amusement, but then the drug wears off, leaving him a powerless vagrant again. Shuster provided illustrations, depicting Dunn as a bald man",
+    "questions": {
+      "title": "What is the name of the city where Superman lives?",
+      "options": [
+        { "value": false, "label": "New York" },
+        { "value": false, "label": "Gotham City" },
+        { "value": true, "label": "Metropolis" },
+        { "value": false, "label": "Chicago" }
+      ]
+    }
+  }
+]
