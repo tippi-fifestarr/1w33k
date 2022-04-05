@@ -84,11 +84,13 @@ const Course = () => {
         description: "Go on to the next chapter",
         duration: 5,
       });
-
       save({
         ethAddress: user.attributes.ethAddress,
         chapter: dataToShow.chapter,
       });
+      if (helper.length === dataToShow.chapter) {
+        setShowClaim(true);
+      }
     } else {
       notification.error({
         message: "This is wrong",

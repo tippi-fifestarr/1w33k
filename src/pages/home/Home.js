@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useMoralis } from "react-moralis";
 
 import "./Home.css";
-import HomePerson from "../../assets/homePerson.jpg";
+import HomePerson from "../../assets/homePerson.svg";
 import { notification } from "antd";
 
 const Home = () => {
