@@ -30,6 +30,9 @@ const Navbar = () => {
       <div className="nav-items w-50">
         {isAuthenticated ? (
           <>
+            <div className="nav-item" onClick={() => navigate("/aboutUs")}>
+              <h3>About US</h3>
+            </div>
             <div className="nav-item" onClick={() => navigate("/profile")}>
               <h3>Profile</h3>
             </div>

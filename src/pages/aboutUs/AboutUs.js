@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useMoralis } from "react-moralis";
 
 import "./aboutUs.css";
-import HomePerson from "../../assets/homePerson.svg";
+import beTheHero from "../../assets/beTheHero.svg";
 import { notification } from "antd";
 
 // this is the about us page, but actually home.
-const Home = () => {
+const AboutUs = () => {
   const navigate = useNavigate();
   const { authenticate, isAuthenticated, authError } = useMoralis();
   const [clickOnStart, setClickOnStart] = useState(false);
@@ -42,9 +42,16 @@ const Home = () => {
         <div className="w-50 data-content h-100">
           <h1 className="title">About 1w33k</h1>
           <h2 className="subtitle">
-           We are a team of developers and designers who are passionate about things.
-           <br />
-           Our client is an equipment supplier for Comic-Con fairs. The staff of the company has changed over the years. A large part of the young employees are not sufficiently familiar with classics such as Star Wars. In their work, they are often involved in conversations with exhibitors who have been in the scene for a long time and are well established. This has repeatedly led to disputes with hardcore nerds, which subsequently have a negative impact on business.
+            We are a team of developers and designers who are passionate about
+            things.
+            <br />
+            Our client is an equipment supplier for Comic-Con fairs. The staff
+            of the company has changed over the years. A large part of the young
+            employees are not sufficiently familiar with classics such as Star
+            Wars. In their work, they are often involved in conversations with
+            exhibitors who have been in the scene for a long time and are well
+            established. This has repeatedly led to disputes with hardcore
+            nerds, which subsequently have a negative impact on business.
           </h2>
           <br />
           <div className="nav-item-home" onClick={startCourse}>
@@ -53,7 +60,7 @@ const Home = () => {
         </div>
         <div className="w-50 image-content h-100">
           <img
-            src={HomePerson}
+            src={beTheHero}
             alt="course-person"
             className="img-home-person"
           />
@@ -63,4 +70,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutUs;

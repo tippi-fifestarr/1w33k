@@ -10,6 +10,7 @@ import { Radio, Space, notification, Progress } from "antd";
 import { LeftOutlined, RightOutlined, CheckOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import Loading from "../../components/global/Loading";
+import ClaimModal from "../../components/course/ClaimModal";
 
 const Course = () => {
   const { save } = useNewMoralisObject("userCourse");
@@ -21,11 +22,18 @@ const Course = () => {
     [user],
     { autoFetch: false }
   );
+  const { fetch: fetchAllowed } = useMoralisQuery(
+    "allowedList",
+    (query) => query.equalTo("ethAddress", user?.attributes?.ethAddress),
+    [user],
+    { autoFetch: false }
+  );
 
   const [dataToShow, setDataToShow] = useState({});
   const [optionSelected, setOptionSelected] = useState();
   const [showValidation, setShowValidation] = useState(true);
   const [showClaim, setShowClaim] = useState(false);
+  const [showClaimModal, setShowClaimModal] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -55,7 +63,7 @@ const Course = () => {
 
             setShowValidation(false);
             if (dataToShow.chapter === helper.length) {
-              setShowClaim(true);
+              checkAllowedList();
             }
           }
         }
@@ -89,7 +97,7 @@ const Course = () => {
         chapter: dataToShow.chapter,
       });
       if (helper.length === dataToShow.chapter) {
-        setShowClaim(true);
+        checkAllowedList();
       }
     } else {
       notification.error({
@@ -97,6 +105,17 @@ const Course = () => {
         description: "Correct your answer and try again",
         duration: 5,
       });
+    }
+  };
+
+  const checkAllowedList = async () => {
+    let data = await fetchAllowed();
+    if (data.length > 0) {
+      if (!data[0].get("completed")) {
+        data[0].set("completed", true);
+        data[0].save();
+      }
+      setShowClaim(true);
     }
   };
 
@@ -114,7 +133,7 @@ const Course = () => {
 
   const next = () => {
     if (dataToShow.chapter === helper.length) {
-      setShowClaim(true);
+      checkAllowedList();
       return;
     }
     clearOptions();
@@ -204,24 +223,33 @@ const Course = () => {
           </div>
 
           <div className="w-50 arrow-next">
-            {!showValidation && !showClaim && (
-              <div className="nav-item-home" onClick={next}>
-                <h3>
-                  Next <RightOutlined />
-                </h3>
-              </div>
-            )}
+            {!showValidation &&
+              !showClaim &&
+              helper.length !== dataToShow.chapter && (
+                <div className="nav-item-home" onClick={next}>
+                  <h3>
+                    Next <RightOutlined />
+                  </h3>
+                </div>
+              )}
 
             {showClaim && (
-              <div className="nav-item-home">
+              <div
+                className="nav-item-home"
+                onClick={() => setShowClaimModal(true)}
+              >
                 <h3>
-                  Claim NTT <CheckOutlined />
+                  Claim Reward <CheckOutlined />
                 </h3>
               </div>
             )}
           </div>
         </div>
       </div>
+      <ClaimModal
+        show={showClaimModal}
+        setShow={(val) => setShowClaimModal(val)}
+      />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import FooterOwn from "./components/global/FooterOwn";
 import Home from "./pages/home/Home";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import Course from "./pages/course/Course";
-import aboutUs from "./pages/aboutUs/AboutUs";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
 const { Header, Footer, Content } = Layout;
 
@@ -20,7 +20,7 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/aboutUs" element={< aboutUs /> } />
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/profile" element={<>profile</>} />
           <Route path="/course" element={<Course />} />
           <Route path="/" element={<Home />} />
