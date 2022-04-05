@@ -98,11 +98,16 @@ const Course = () => {
     }
   };
 
-  const previous = () => {
+  const clearOptions = () => {
+    window.scrollTo(0, 0);
     setOptionSelected();
     setShowValidation(true);
     setShowClaim(false);
+  };
+
+  const previous = () => {
     setDataToShow(helper[dataToShow.chapter - 2]);
+    clearOptions();
   };
 
   const next = () => {
@@ -110,9 +115,7 @@ const Course = () => {
       setShowClaim(true);
       return;
     }
-    setShowClaim(false);
-    setOptionSelected();
-    setShowValidation(true);
+    clearOptions();
     setDataToShow(helper[dataToShow.chapter]);
   };
 
