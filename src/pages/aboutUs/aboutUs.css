@@ -10,17 +10,17 @@
 .title {
   margin: 0;
   line-height: 96px;
-  font-size: 6.75rem;
-  color: black;
+  font-size: 4.75rem;
+  color: white;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
     1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .subtitle {
-  color: rgb(0, 0, 0);
-  /* text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(255, 255, 255), 0 2px 0 #111, 0 -2px 0 #222,
-    1px 1px #333, -1px -1px 0 #444, 1px -1px 0 #555, -1px 1px 0 #666; */
-} 
+  color: black;
+  text-shadow: 2px 0 0 #999, -2px 0 0 #aaa, 0 2px 0 #bbb, 0 -2px 0 #ccc,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #ddd;
+}
 
 .data-content {
   text-align: left;
@@ -47,6 +47,5 @@
   .subtitle {
     font-size: 16px;
     line-height: 24px;
-    
   }
 }
