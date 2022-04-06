@@ -39,43 +39,41 @@ const Course = () => {
   useEffect(() => {
     if (isAuthenticated && firstLoad === 0) {
       setFirstLoad(1);
-      fetch();
+      loadChapterData();
     }
   }, [isAuthenticated]);
 
-  useEffect(() => {
-    if (firstLoad !== 0) {
-      if (data.length > 0) {
-        if (firstLoad === 1) {
-          setFirstLoad(2);
-          let auxData = data.length;
-          while (auxData - 1 >= helper.length) {
-            auxData--;
-          }
-          setDataToShow(helper[auxData - 1]);
-        } else {
-          if (data.length > dataToShow.chapter) {
-            dataToShow.questions.options.forEach((option, index) => {
-              if (option.value) {
-                setOptionSelected(index);
-              }
-            });
+  const loadChapterData = async () => {
+    let dataChapter = await fetch();
+    if (dataChapter.length > 0) {
+      let auxData = dataChapter.length;
+      while (auxData - 1 >= helper.length) {
+        auxData--;
+      }
+      setDataToShow(helper[auxData - 1]);
+    } else {
+      initChapter();
+    }
+  };
 
-            setShowValidation(false);
-            if (dataToShow.chapter === helper.length) {
-              checkAllowedList();
-            }
-          }
+  const checkIfAnswered = () => {
+    if (data.length > dataToShow.chapter) {
+      dataToShow.questions.options.forEach((option, index) => {
+        if (option.value) {
+          setOptionSelected(index);
         }
-      } else {
-        initChapter();
+      });
+
+      setShowValidation(false);
+      if (dataToShow.chapter === helper.length) {
+        checkAllowedList();
       }
     }
-  }, [data]);
+  };
 
   useEffect(() => {
     if (dataToShow.chapter) {
-      fetch();
+      checkIfAnswered();
     }
   }, [dataToShow]);
 
@@ -84,17 +82,18 @@ const Course = () => {
     setDataToShow(helper[0]);
   };
 
-  const validateAnswer = () => {
+  const validateAnswer = async () => {
     if (dataToShow.questions?.options[optionSelected].value) {
+      await save({
+        ethAddress: user.attributes.ethAddress,
+        chapter: dataToShow.chapter,
+      });
+      await fetch();
       setShowValidation(false);
       notification.success({
         message: "This is correct",
         description: "Go on to the next chapter",
         duration: 5,
-      });
-      save({
-        ethAddress: user.attributes.ethAddress,
-        chapter: dataToShow.chapter,
       });
       if (helper.length === dataToShow.chapter) {
         checkAllowedList();
