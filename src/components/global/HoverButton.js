@@ -2,10 +2,10 @@
 import React from 'react'
 import "./Hover.css";
 
-const HoverButton = () => {
+const HoverButton = ( {onClick, buttonText} ) => {
   return (
-    <div className="nav-item-home">
-            <h3>Fart for FREE!</h3>
+    <div className="nav-item-home" onClick={onClick}>
+            <h3>{buttonText}</h3>
           </div>
   )
 }
