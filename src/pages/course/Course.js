@@ -11,6 +11,7 @@ import { LeftOutlined, RightOutlined, CheckOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import Loading from "../../components/global/Loading";
 import ClaimModal from "../../components/course/ClaimModal";
+import HoverButton from "../../components/global/HoverButton";
 
 const Course = () => {
   const { save } = useNewMoralisObject("userCourse");
@@ -29,11 +30,19 @@ const Course = () => {
     { autoFetch: false }
   );
 
+  const { fetch: fetchShowClaim } = useMoralisQuery(
+    "poapLink",
+    (query) => query.equalTo("ethAddress", user?.get("ethAddress")),
+    [user],
+    { autoFetch: false }
+  );
+
   const [dataToShow, setDataToShow] = useState({});
   const [optionSelected, setOptionSelected] = useState();
   const [showValidation, setShowValidation] = useState(true);
   const [showClaim, setShowClaim] = useState(false);
   const [showClaimModal, setShowClaimModal] = useState(false);
+  const [poapLink, setPoapLink] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -114,7 +123,13 @@ const Course = () => {
         data[0].set("completed", true);
         data[0].save();
       }
-      setShowClaim(true);
+      let dataClaim = await fetchShowClaim();
+      if (dataClaim.length === 0) {
+        setShowClaim(true);
+      } else {
+        setPoapLink(dataClaim[0].get("link"));
+        setShowClaim(false);
+      }
     }
   };
 
@@ -242,12 +257,22 @@ const Course = () => {
                 </h3>
               </div>
             )}
+
+            {poapLink !== "" && (
+              <HoverButton
+                onClick={() => window.open(poapLink, "_blank").focus()}
+                buttonText="Poap Link"
+              />
+            )}
           </div>
         </div>
       </div>
       <ClaimModal
         show={showClaimModal}
-        setShow={(val) => setShowClaimModal(val)}
+        setShow={(val) => {
+          setShowClaimModal(val);
+          checkAllowedList();
+        }}
       />
     </div>
   );
