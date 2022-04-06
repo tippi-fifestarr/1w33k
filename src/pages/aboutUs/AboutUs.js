@@ -5,6 +5,7 @@ import { useMoralis } from "react-moralis";
 import "./aboutUs.css";
 import beTheHero from "../../assets/beTheHero.svg";
 import { notification } from "antd";
+import HoverButton from "../../components/global/HoverButton";
 
 // this is the about us page, but actually home.
 const AboutUs = () => {
@@ -54,9 +55,8 @@ const AboutUs = () => {
             nerds, which subsequently have a negative impact on business.
           </h2>
           <br />
-          <div className="nav-item-home" onClick={startCourse}>
-            <h3>Start for FREE!</h3>
-          </div>
+          <HoverButton onClick={startCourse}/>
+          
         </div>
         <div className="w-50 image-content h-100">
           <img
