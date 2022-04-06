@@ -34,7 +34,7 @@ const Navbar = () => {
             <HoverButton onClick={() => navigate("/course")} buttonText="Start" />
             <HoverButton onClick={() => navigate("/aboutUs")} buttonText="About" />
             <HoverButton onClick={() => navigate("/profile")} buttonText="Profile" />
-            <HoverButton onClick={() => logoutMoralis()} buttonText="Logout" />
+            <HoverButton onClick={logoutMoralis} buttonText="Logout" />
       
           </>
         ) : (

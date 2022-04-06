@@ -1,0 +1,45 @@
+.card-claim-border {
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #eb383c, #f4f017);
+  padding: 3px;
+  border-radius: 15px;
+  height: fit-content;
+}
+
+.card-claim-content {
+  background: linear-gradient(to right, #ffd1d5, #ffffe3);
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card-claim-content:hover {
+  transform: scale(1.2);
+  background: linear-gradient(to right, #eb383c, #f4f017);
+  transition: all 0.5s;
+}
+
+.card-claim-content > h2 {
+  margin-bottom: 0 !important;
+}
+
+.modal-claim-token {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .modal-claim-token {
+    gap: 30px;
+  }
+}
