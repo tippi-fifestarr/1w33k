@@ -48,7 +48,7 @@ const AboutUs = () => {
            Our client is an equipment supplier for Comic-Con fairs. The staff of the company has changed over the years. A large part of the young employees are not sufficiently familiar with classics such as Star Wars. In their work, they are often involved in conversations with exhibitors who have been in the scene for a long time and are well established. This has repeatedly led to disputes with hardcore nerds, which subsequently have a negative impact on business.
           </h2>
           <br />
-          <HoverButton onClick={startCourse}/>
+          <HoverButton buttonText="Fart for Free, From Us!!!" onClick={startCourse}/>
           
         </div>
         <div className="w-50 image-content h-100">

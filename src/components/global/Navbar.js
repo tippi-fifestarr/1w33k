@@ -4,6 +4,7 @@ import { useMoralis } from "react-moralis";
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import { notification } from "antd";
+import HoverButton from "./HoverButton";
 
 const Navbar = () => {
   const { authenticate, isAuthenticated, logout, authError } = useMoralis();
@@ -30,23 +31,18 @@ const Navbar = () => {
       <div className="nav-items w-50">
         {isAuthenticated ? (
           <>
-            <div className="nav-item" onClick={() => navigate("/profile")}>
-              <h3>Profile</h3>
-            </div>
-            <div className="nav-item" onClick={() => logoutMoralis()}>
-              <h3>Logout</h3>
-            </div>
+            <HoverButton onClick={() => navigate("/course")} buttonText="Start" />
+            <HoverButton onClick={() => navigate("/aboutUs")} buttonText="About" />
+            <HoverButton onClick={() => navigate("/profile")} buttonText="Profile" />
+            <HoverButton onClick={() => logoutMoralis()} buttonText="Logout" />
+      
           </>
         ) : (
-          <div
-            className="nav-item"
-            onClick={() => {
-              setIsLogin(true);
-              authenticate();
-            }}
-          >
-            <h3>Login with metamask</h3>
-          </div>
+          <HoverButton onClick={() => {
+            setIsLogin(true);
+            authenticate();
+          }} buttonText="Metamask Login" />
+
         )}
       </div>
     </div>

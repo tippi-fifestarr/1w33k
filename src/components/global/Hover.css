@@ -1,7 +1,7 @@
 .nav-item-home {
     padding: 5px 25px;
     background-color: black;
-    border-radius: 3px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.5s;
     width: fit-content;
@@ -22,18 +22,7 @@
   }
 
   @media (max-width: 600px) {
-    .w-10,
-    .w-20,
-    .w-30,
-    .w-40,
-    .w-50,
-    .w-60,
-    .w-70,
-    .w-80,
-    .w-90,
-    .w-100 {
-      width: 100%;
-    }
+    
     .nav-item-home {
       font-size: 14px;
       line-height: 18px;

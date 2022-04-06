@@ -5,6 +5,7 @@ import { useMoralis } from "react-moralis";
 import "./Home.css";
 import HomePerson from "../../assets/homePerson.svg";
 import { notification } from "antd";
+import HoverButton from "../../components/global/HoverButton";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -44,11 +45,7 @@ const Home = () => {
             1W33k is a quiz about comics to people become familiar with the principal topics of the comics. To start, you need to sign in.
           </h2>
           <br />
-          <div className="nav-item-home" onClick={startCourse}>
-            <h3>Start for FREE! 
-
-            </h3>
-          </div>
+          <HoverButton buttonText="Start for Free Homie!" onClick={startCourse}/>
         </div>
         <div className="w-50 image-content h-100">
           <img
