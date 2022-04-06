@@ -1,0 +1,32 @@
+.nav-item-home {
+    padding: 5px 25px;
+    background-color: black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: fit-content;
+  }
+  
+  .nav-item-home > h3 {
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .nav-item-home:hover > h3 {
+    color: black;
+  }
+  .nav-item-home:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 600px) {
+    
+    .nav-item-home {
+      font-size: 14px;
+      line-height: 18px;
+      width: 100%;
+      text-align: center;
+    }
+  }
