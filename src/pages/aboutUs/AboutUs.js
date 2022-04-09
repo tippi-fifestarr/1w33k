@@ -55,8 +55,10 @@ const AboutUs = () => {
             nerds, which subsequently have a negative impact on business.
           </h2>
           <br />
-          <HoverButton buttonText="Fart for Free, From Us!!!" onClick={startCourse}/>
-          
+          <HoverButton
+            buttonText="Fart for Free, From Us!!!"
+            onClick={startCourse}
+          />
         </div>
         <div className="w-50 image-content h-100">
           <img
