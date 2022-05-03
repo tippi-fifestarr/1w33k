@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// replace the pow logo with our logo
 import logo from "../../assets/logo.png";
 import { useMoralis } from "react-moralis";
 import "./Navbar.css";

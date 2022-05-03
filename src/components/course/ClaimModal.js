@@ -11,6 +11,7 @@ const ClaimModal = ({ show, setShow }) => {
     [],
     { autoFetch: false }
   );
+  // make a function to claim a poap
   const claimPoap = async () => {
     let data = await fetch();
     if (data.length > 0) {

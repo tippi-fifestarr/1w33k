@@ -8,8 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <MoralisProvider
-    appId="mJEamOQwchYYcOUsH27wCGQDHtM8AfquQChSntQv"
-    serverUrl="https://0xee4fzuqeju.usemoralis.com:2053/server"
+    appId="jSNJF41s7SzkzGYrB3e06qs87w1BUv92AJyHyOGa"
+    serverUrl="https://oxl58o7jwnnw.usemoralis.com:2053/server"
   >
     <BrowserRouter>
       <App />

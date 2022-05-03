@@ -4,7 +4,7 @@ const FooterOwn = () => {
   return (
     <div className="text-center footerBg">
       <hr className="divider" />
-      <div className="footer-info">2022</div>
+      <div className="footer-info">2022 Open Source | All Rights Reserved | Privacy Policy | Terms of Use</div>
     </div>
   );
 };
