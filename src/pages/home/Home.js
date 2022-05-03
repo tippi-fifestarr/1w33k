@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMoralis } from "react-moralis";
-
+import StackSetup from "../../components/global/stacks/StackSetup";
 import "./Home.css";
 import Education from "../../assets/Education.svg";
 import { notification } from "antd";
@@ -43,11 +43,13 @@ const Home = () => {
   return (
     <div>
       {isAuthenticated ? (
+
+
+        // component for authenticated users
         <>
+          < StackSetup />
+
           <div>yeah it works </div>
-          <div className="timer">
-            <Timer MinSecs={MinSecs} />
-          </div>
         </>
 
       ) : (

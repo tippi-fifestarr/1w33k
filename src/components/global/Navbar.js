@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="nav-items w-50">
         {isAuthenticated ? (
           <>
-            <HoverButton onClick={() => navigate("/course")} buttonText="Start" />
+            <HoverButton onClick={() => navigate("/")} buttonText="Start" />
             <HoverButton onClick={() => navigate("/aboutUs")} buttonText="About" />
             <HoverButton onClick={() => navigate("/profile")} buttonText="Profile" />
             <HoverButton onClick={logoutMoralis} buttonText="Logout" />
