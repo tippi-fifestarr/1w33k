@@ -41,7 +41,7 @@ const Navbar = () => {
         ) : (
           <HoverButton onClick={() => {
             setIsLogin(true);
-            authenticate();
+            authenticate({ provider: "walletconnect" });
           }} buttonText="Metamask Login" />
 
         )}
