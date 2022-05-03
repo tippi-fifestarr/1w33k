@@ -1,0 +1,92 @@
+.home-course {
+  display: flex;
+  padding: 5% 15%;
+  height: 75vh;
+  text-align: center;
+  background: linear-gradient(180deg, #0d0d0d, white);
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0;
+  line-height: 96px;
+  font-size: 4.75rem;
+  color: white;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.subtitle {
+  color: black;
+  text-shadow: 2px 0 0 #999, -2px 0 0 #aaa, 0 2px 0 #bbb, 0 -2px 0 #ccc,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #ddd;
+}
+
+.main-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  border-radius: 12px;
+  border: 1px solid #ccc!important
+}
+
+.main-activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 5%;
+  border-radius: 12px;
+  border: 1px solid #ddd!important
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  font-size: x-large;
+}
+
+.user-info-subtitle {
+  font-size: x-small;  
+}
+
+.data-content {
+  text-align: left;
+}
+
+.image-content {
+  text-align: left;
+}
+
+.info-image {
+  width: 42px;
+  height: auto;
+}
+.img-home-person {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.achievements {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .home-course {
+    height: unset;
+    flex-direction: column-reverse;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
