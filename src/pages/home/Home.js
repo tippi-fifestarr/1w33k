@@ -6,6 +6,7 @@ import "./Home.css";
 import Education from "../../assets/Education.svg";
 import { notification } from "antd";
 import HoverButton from "../../components/global/HoverButton";
+import Timer from "../../components/global/Timer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -37,16 +38,20 @@ const Home = () => {
     }
   };
   
+  const MinSecs = { minutes:5, seconds:0 }
 
   return (
     <div>
       {isAuthenticated ? (
+
+
         // component for authenticated users
         <>
           < StackSetup />
 
           <div>yeah it works </div>
         </>
+
       ) : (
         <div className="home-course">
           <div className="w-50 data-content h-100">
