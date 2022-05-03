@@ -39,11 +39,16 @@ const Navbar = () => {
       
           </>
         ) : (
+          <>
+          <HoverButton onClick={() => {
+            setIsLogin(true);
+            authenticate();
+          }} buttonText="Metamask Login" />
           <HoverButton onClick={() => {
             setIsLogin(true);
             authenticate({ provider: "walletconnect" });
-          }} buttonText="Metamask Login" />
-
+          }} buttonText="WalletConnect" />
+          </>
         )}
       </div>
     </div>
