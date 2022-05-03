@@ -36,7 +36,8 @@ Check out why & how we got started: https://mohamedshakeel1128.gitbook.io/1w33k/
 - **Blockchain:** Moralis Server, Polygon, Filecoin (through NFT.Storage)
 - **Design:** Figma, Undraw.io
 
-
+### Common Error
+Webpack 4-5 there are a lot of problems, when we added WalletConnect (at the request of our UX Designer) Wil had to lower the webpack, this may help: https://forum.moralis.io/t/solved-breaking-change-webpack-5-used-to-include-polyfills-for-node-js-core-modules-by-default/6875
 
 # Contributing to our docs!
 We love onboarding new and crazy ideas that make sense, so please feel free to:
