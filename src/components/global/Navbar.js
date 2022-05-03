@@ -32,18 +32,23 @@ const Navbar = () => {
       <div className="nav-items w-50">
         {isAuthenticated ? (
           <>
-            <HoverButton onClick={() => navigate("/course")} buttonText="Start" />
+            <HoverButton onClick={() => navigate("/")} buttonText="Start" />
             <HoverButton onClick={() => navigate("/aboutUs")} buttonText="About" />
             <HoverButton onClick={() => navigate("/profile")} buttonText="Profile" />
             <HoverButton onClick={logoutMoralis} buttonText="Logout" />
       
           </>
         ) : (
+          <>
           <HoverButton onClick={() => {
             setIsLogin(true);
             authenticate();
           }} buttonText="Metamask Login" />
-
+          <HoverButton onClick={() => {
+            setIsLogin(true);
+            authenticate({ provider: "walletconnect" });
+          }} buttonText="WalletConnect" />
+          </>
         )}
       </div>
     </div>

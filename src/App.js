@@ -5,8 +5,8 @@ import Navbar from "./components/global/Navbar";
 import FooterOwn from "./components/global/FooterOwn";
 import Home from "./pages/home/Home";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
-import Course from "./pages/course/Course";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Profile from "./pages/profile/Profile";
 
 const { Header, Footer, Content } = Layout;
 
@@ -21,8 +21,10 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/profile" element={<>profile</>} />
-          <Route path="/course" element={<Course />} />
+          {/* bottom of profile has nft timeline */}
+          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/stackTimer" element={<Timer />} /> */}
+          {/* home has the setupStack */}
           <Route path="/" element={<Home />} />
         </Routes>
       </Content>
