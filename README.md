@@ -15,7 +15,7 @@ Here's how the flow works!:
 ```
 > install and run !
 ```
-    cd ./unstuck
+    cd ./un-st-ck
     npm install
     npm start
 ```
