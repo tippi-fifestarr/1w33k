@@ -24,15 +24,15 @@ const AboutUs = () => {
 
   useEffect(() => {
     if (clickOnStart && isAuthenticated) {
-      navigate("/course");
+      navigate("/");
     }
     setClickOnStart(false);
   }, [isAuthenticated]);
 
-  const startCourse = () => {
+  const startStackTimer = () => {
     setClickOnStart(true);
     if (isAuthenticated) {
-      navigate("/course");
+      navigate("/");
     } else {
       authenticate();
     }
@@ -41,23 +41,16 @@ const AboutUs = () => {
     <div>
       <div className="home-course">
         <div className="w-50 data-content h-100">
-          <h1 className="title">About 1w33k</h1>
+          <h1 className="title">About UN 5tack</h1>
           <h2 className="subtitle">
-            We are a team of developers and designers who are passionate about
-            things.
+            We are a team who wants to encourage people to read more books.  
             <br />
-            Our client is an equipment supplier for Comic-Con fairs. The staff
-            of the company has changed over the years. A large part of the young
-            employees are not sufficiently familiar with classics such as Star
-            Wars. In their work, they are often involved in conversations with
-            exhibitors who have been in the scene for a long time and are well
-            established. This has repeatedly led to disputes with hardcore
-            nerds, which subsequently have a negative impact on business.
+            A stack of books a day keeps the duldrums away.
           </h2>
           <br />
           <HoverButton
-            buttonText="Fart for Free, From Us!!!"
-            onClick={startCourse}
+            buttonText="Start STACKING!"
+            onClick={startStackTimer}
           />
         </div>
         <div className="w-50 image-content h-100">
